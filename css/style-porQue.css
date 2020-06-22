@@ -1,0 +1,244 @@
+@import url('./variables.css');
+
+#Intro {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Intro div img {
+    width: 100%;
+}
+
+#Intro h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+.intro {
+    position: absolute;
+}
+
+.isologo {
+    height: 100%;
+    width: 200px !important;
+    margin: auto;
+}
+
+.linkSlogan {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 50px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+#Slogan a:hover {
+    background-color: white;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+
+#FalconBack1 {
+    background-image: url("../assets/porQueElegirnos/a002.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 500px;
+}
+
+#FalconBack2 {
+    background-image: url("../assets/porQueElegirnos/a001.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 500px;
+}
+
+#Falcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0px 250px;
+}
+
+.containerLinksFlacon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.linkFalconWhy {
+    flex-direction: column;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: var(--color-green);
+    font-weight: 700;
+    border: 2px solid var(--color-blue);
+    margin: 5px 0px;
+}
+
+.linkFalconWhy:hover {
+    text-decoration: none;
+}
+
+#FalconExperence {
+    color: var(--color-green);
+    padding: 0px 50px;
+    margin-left: 50px;
+}
+
+.h3 {
+    color: var(--color-green);
+    padding: 0px 10px;
+}
+
+.rowOT {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.textoFalconExperence {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--color-blue);
+    text-align: left;
+}
+
+.ulNoPadding {
+    padding: 0px;
+}
+
+.item {
+    text-decoration: none;
+    list-style: none;
+}
+
+#Equipo {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Equipo div img {
+    width: 100%;
+}
+
+#BodyEquipo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 20px;
+}
+
+#Integrantes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#BodyEquipo h3 {
+    text-align: center;
+    color: var(--color-green) !important;
+    font-size: 30px;
+}
+
+.EquipoSubTitle {
+    color: var(--color-blue);
+    font-weight: 700;
+}
+
+.textEquipo {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--color-blue);
+}
+
+.imgEquipo {
+    height: 210px;
+    width: 210;
+    border-radius: 50%;
+}
+
+.nombreEquipo {
+    margin-top: 20px;
+    color: var(--color-blue);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cargoEquipo {
+    color: var(--color-green);
+    text-align: center;
+    font-size: 16px;
+}
+
+.notaEquipo {
+    color: var(--color-blue);
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 1024px) {
+    #FalconExperenceMobile {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #Intro h1 {
+        color: white;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .isologo {
+        height: 100%;
+        width: 70px !important;
+        margin: auto;
+    }
+
+    #FalconBack1 {
+        display: none;
+    }
+
+    #backEquipo {
+        display: none;
+    }
+
+    #BodyEquipo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: static;
+    }
+
+    #Integrantes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

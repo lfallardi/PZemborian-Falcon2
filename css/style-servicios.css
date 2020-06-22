@@ -1,0 +1,160 @@
+@import url('./variables.css');
+
+
+#FalconBack1 {
+    background-image: url("../assets/servicios/a001.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 500px;
+}
+
+#FalconBack2 {
+    background-image: url("../assets/servicios/a000.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 500px;
+}
+
+#Falcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#FalconServicio {
+    text-align: right;
+    font-size: 30px;
+    color: var(--color-green);
+    padding: 5px 0px;
+    padding-right: 15px;
+}
+
+.logo-servicio {
+    height: 110px;
+    width: 110px;
+    margin-bottom: 50px;
+}
+
+.containerLinksFlacon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.linkFalconWhy {
+    flex-direction: column;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: var(--color-green);
+    font-weight: 700;
+    border: 2px solid var(--color-blue);
+    margin: 5px 0px;
+}
+
+.linkFalconWhy:hover {
+    text-decoration: none;
+}
+
+#FalconExperence {
+    text-align: left;
+    font-size: 20px;
+    color: var(--color-green);
+    padding: 10px;
+    padding-right: 30px;
+}
+
+.separadorFalcon {
+    height: 260px;
+    width: 3px;
+    background-color: var(--color-blue);
+    margin: 10px;
+}
+
+.textoFalconExperence {
+    font-size: 14px;
+    line-height: 26px;
+    padding-right: 100px;
+    color: var(--color-blue);
+}
+/*------------------------------------------------------------------*/
+
+#Back1Servicios {
+    background-image: url("../assets/index/a005.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 380px;
+}
+
+#Back2Servicios {
+    background-image: url("../assets/index/a004.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 380px;
+}
+
+#Servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0px;
+}
+
+#ServiciosTitle {
+    text-align: center;
+    color: var(--color-blue);
+    font-size: 25px;
+    padding: 30px 0px;
+}
+
+.textServicios {
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--color-green);
+    text-align: center;
+}
+
+.textServiciosResaltado {
+    color: var(--color-blue);
+}
+
+.rowServicios {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    #FalconServicioMobile, #ServiciosMobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #FalconBack1, #Back1Servicios {
+        display: none;
+    }
+
+    #FalconServicio {
+        text-align: center;
+        font-size: 30px;
+        color: var(--color-green);
+        padding: 5px 0px;
+        padding-right: 0px;
+    }
+
+    #Servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0px 20px;
+    }
+
+}

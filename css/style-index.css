@@ -1,0 +1,234 @@
+@import url('./variables.css');
+
+#Intro {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Intro div img {
+    width: 100%;
+}
+
+#Intro h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+.intro {
+    position: absolute;
+}
+
+.intro a:hover {
+    background-color: white;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.introP {
+    color: white;
+    font-size: 40px;
+    padding: 0px 150px;
+}
+
+.introLink {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 50px;
+    text-decoration: none;
+}
+
+
+#Falcon {
+    margin-top: -15px;
+}
+
+#FalconBack1 {
+    background-image: url("../assets/index/a003.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 500px;
+}
+
+#FalconBack2 {
+    background-image: url("../assets/index/a002.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 500px;
+    display: flex;
+}
+
+.rowFalcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#FalconWhy {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+#FalconWhy h3 {
+    color: var(--color-green);
+}
+
+.falconName {
+    color: var(--color-blue) !important;
+}
+
+.containerLinksFlacon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.containerLinksFlacon a{
+    color: var(--color-green);
+    border: 2px solid var(--color-blue);
+    padding: 10px 20px;
+    margin: 10px 0px;
+    text-decoration: none;
+}
+
+.containerLinksFlacon a:hover{
+    color: var(--color-blue);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+#FalconExperence {
+    color: var(--color-green);
+}
+
+.textoFalconExperence {
+    color: var(--color-blue) !important;
+}
+
+
+#Back1Boutique {
+    background-image: url("../assets/index/a005.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 380px;
+}
+
+#Back2Boutique {
+    background-image: url("../assets/index/a004.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 380px;
+}
+
+#Boutique {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#BoutiqueTitle {
+    text-align: center;
+    color: var(--color-green);
+    font-size: 30px;
+}
+
+.boutiqueSubTitle {
+    color: var(--color-blue);
+}
+
+.textBoutique {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--color-blue);
+}
+
+@media (min-width: 1024px) {
+    .textoFalconExperence {
+        color: var(--color-blue) !important;
+        padding-right: 150px;
+    }
+
+    #FalconWhyMobile, #BoutiqueMobileContainer {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    #Intro h1 {
+        color: white;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .introP {
+        font-size: 12px;
+        padding: 0px 20px;
+    }
+
+    #Falcon {
+        margin-top: 0px;
+    }
+    
+    #FalconBack1, #Back1Boutique {
+        display: none;
+    } 
+
+    #FalconWhyMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #FalconWhy {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center
+    }
+
+    .containerLinksFlacon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #BoutiqueMobileContainer {
+        background-image: url('../assets/index/a005.png');
+        background-position: left;
+        background-size: contain;
+    }
+
+    .boutiqueSubTitle {
+        padding: 5px;
+    }
+
+    .textBoutiqueResponsive {
+        font-size: 16px;
+        line-height: 28px;
+        color: var(--color-blue);
+        padding: 0px 10px;
+    }
+
+}
