@@ -199,6 +199,10 @@
     margin-bottom: 50px;
 }
 
+.modal-body h6 {
+    margin: 10px 0px;
+}
+
 @media (min-width: 1024px) {
     #FalconExperenceMobile {
         display: none;
